@@ -1,25 +1,25 @@
-# CUMCM 2025 Project
+# 2025 年全国大学生数学建模竞赛项目
 
-Solution to **Problem C** of the **2025 China Undergraduate Mathematical Contest in Modeling (CUMCM)**: **Timing Selection for NIPT and Fetal Abnormality Determination**.
+本仓库收录了 **2025 年全国大学生数学建模竞赛（CUMCM）C 题**：**NIPT 检测时机选择与胎儿异常判定** 的论文与代码。
 
-This repository contains the paper and code for our team’s project, **“‘孕’育精准：基于多模态机器学习的 NIPT 检测全流程优化算法”**. I am **Mingyan Zhao (赵明艳)**, the **team leader** of this project, and I was primarily responsible for the modeling framework, paper writing, and code organization of this work, which received the **National Second Prize** in the **2025 CUMCM**.
+本项目题为 **《“孕”育精准：基于多模态机器学习的 NIPT 检测全流程优化算法》**。本人为 **赵明艳**，担任本项目**队长**，主要负责本研究的**建模框架设计、论文撰写与代码整理工作**。本项目获 **2025 年全国大学生数学建模竞赛国家二等奖**
 
-This project combines **regression analysis, clustering, risk-aware optimization, and machine learning classification** to address a multi-stage decision problem in NIPT. Although the application background is biomedical, the core of this work is a complete **data-driven modeling workflow**, including quantitative analysis, personalized decision-making, and reproducible implementation.
+本研究综合运用了**回归分析、聚类分析、风险优化与机器学习分类方法**，针对 NIPT 检测流程中的多阶段决策问题进行了系统建模。虽然问题背景属于生物医学检测，但本项目的核心本质是一个完整的**数据驱动建模流程**，涵盖了定量分析、个体化决策与可复现实现等关键环节。
 
-## Highlights
+## 项目亮点
 
-- Built a **multivariate regression model** to analyze the relationship between fetal Y-chromosome concentration and maternal factors.
-- Developed a **BMI-based timing strategy** using **K-means clustering** and risk optimization.
-- Extended the framework to **multi-factor soft clustering** with a **Gaussian Mixture Model (GMM)**.
-- Constructed an **XGBoost-based classifier** for abnormality detection in female fetuses.
+- 构建了**多元回归模型**，分析胎儿 Y 染色体浓度与孕妇个体因素之间的关系。
+- 基于 **K-means 聚类** 与风险优化方法，设计了**基于 BMI 分组的检测时机决策策略**。
+- 在此基础上，进一步扩展为结合多因素信息的**GMM 软聚类分组框架**。
+- 针对女性胎儿异常判定问题，构建了**基于 XGBoost 的分类模型**。
 
-## Key Results
+## 关键结果
 
-- Optimal testing times under BMI-based grouping: **13.8, 15.2, 16.7 weeks**
-- Optimal testing times under multi-factor GMM grouping: **13.2, 15.6, 18.3 weeks**
-- Female fetal abnormality detection: **AUC = 0.962**
+- 基于 BMI 分组的最优检测时机分别为：**13.8 周、15.2 周、16.7 周**
+- 基于多因素 GMM 分组的最优检测时机分别为：**13.2 周、15.6 周、18.3 周**
+- 女性胎儿异常判定模型性能：**AUC = 0.962**
 
-## Repository Structure
+## 仓库结构
 
 ```text
 2025-cumcm-modeling-project/
